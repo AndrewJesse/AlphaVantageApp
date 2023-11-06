@@ -1,4 +1,8 @@
+# Ignore secret data
 api_key.json
 
 # Ignore Debug build folder
 [Oo]bj/
+
+# Ignore bin
+bin/

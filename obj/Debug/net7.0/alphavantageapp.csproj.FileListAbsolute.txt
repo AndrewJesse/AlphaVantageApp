@@ -12,3 +12,6 @@ C:\Users\ajmar\Desktop\AlphaVantageApp\obj\Debug\net7.0\refint\alphavantageapp.d
 C:\Users\ajmar\Desktop\AlphaVantageApp\obj\Debug\net7.0\alphavantageapp.pdb
 C:\Users\ajmar\Desktop\AlphaVantageApp\obj\Debug\net7.0\alphavantageapp.genruntimeconfig.cache
 C:\Users\ajmar\Desktop\AlphaVantageApp\obj\Debug\net7.0\ref\alphavantageapp.dll
+C:\Users\ajmar\Desktop\AlphaVantageApp\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\ajmar\Desktop\AlphaVantageApp\obj\Debug\net7.0\alphavantageapp.csproj.AssemblyReference.cache
+C:\Users\ajmar\Desktop\AlphaVantageApp\obj\Debug\net7.0\alphavantageapp.csproj.CopyComplete

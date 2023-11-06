@@ -1,2 +1,4 @@
 api_key.json
 
+# Ignore Debug build folder
+[Oo]bj/

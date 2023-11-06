@@ -6,3 +6,6 @@ api_key.json
 
 # Ignore bin
 bin/
+
+# Ignore VS Code files
+.vscode

@@ -10,7 +10,7 @@ using System.Linq;
 string keyPath = "api_key.json";
 string json = File.ReadAllText(keyPath);
 var jsonObject = JsonSerializer.Deserialize<GetAPI>(json);
-string QUERY_URL = $"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey={jsonObject?.api_key}";
+string QUERY_URL = $"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=SPY&apikey={jsonObject?.api_key}";
 
 using (HttpClient client = new HttpClient())
 {

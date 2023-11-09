@@ -20,13 +20,21 @@ using (HttpClient client = new HttpClient())
     // Deserialize the JSON response into a StockData object.
     var stockData = JsonSerializer.Deserialize<StockData>(jsonString);
 
+    List<decimal> closingPrices = new List<decimal>();
+
     // Loop through the daily quotes and print out the closing price for each day.
     if (stockData != null && stockData.TimeSeriesDaily != null)
     {
         foreach (var entry in stockData.TimeSeriesDaily.Take(20))
         {
-            // Process the item here
-            Console.WriteLine($"Closing price for {entry.Key}: {entry.Value.Close}");
+            if (decimal.TryParse(entry.Value.Close, out decimal closePrice))
+            {
+                closingPrices.Add(closePrice);
+            }
+            else
+            {
+                // Handle the case where the string could not be parsed to a decimal
+            }
         }
     }
 }

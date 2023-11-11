@@ -34,6 +34,7 @@ using (HttpClient client = new HttpClient())
             else
             {
                 // Handle the case where the string could not be parsed to a decimal
+                System.Console.WriteLine($"Could not parse closing price for {entry.Key}");
             }
         }
         System.Console.WriteLine($"Today's Close: {stockData.TimeSeriesDaily.First().Value.Close:F2}");

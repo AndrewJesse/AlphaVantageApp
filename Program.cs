@@ -36,6 +36,8 @@ using (HttpClient client = new HttpClient())
                 // Handle the case where the string could not be parsed to a decimal
             }
         }
+        System.Console.WriteLine($"Today's Close: {stockData.TimeSeriesDaily.First().Value.Close:F2}");
+        System.Console.WriteLine($"20 day SMA: {closingPrices.Average():F2}");
     }
 }
 

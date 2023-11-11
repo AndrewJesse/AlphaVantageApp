@@ -37,7 +37,9 @@ using (HttpClient client = new HttpClient())
                 System.Console.WriteLine($"Could not parse closing price for {entry.Key}");
             }
         }
+        double percent_change = (double.Parse(stockData.TimeSeriesDaily.First().Value.Close ?? "0") - double.Parse(stockData.TimeSeriesDaily.Skip(1).First().Value.Close ?? "0")) / double.Parse(stockData.TimeSeriesDaily.Skip(1).First().Value.Close ?? "1") * 100;
         System.Console.WriteLine($"Today's Close: {stockData.TimeSeriesDaily.First().Value.Close:F2}");
+        System.Console.WriteLine($"% Change: {percent_change:F2}%");
         System.Console.WriteLine($"20 day SMA: {closingPrices.Average():F2}");
     }
 }
